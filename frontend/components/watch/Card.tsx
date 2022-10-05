@@ -38,9 +38,12 @@ const Card: React.FC<CardProps> = ({ anime }) => {
             {anime.title.english || anime.title.romaji}
           </p>
 
-          <p className="text-gray-400 line-clamp-2">
-            {anime.description.replace(/<\w*\\?>/g, '')}
-          </p>
+          <p
+            className={'text-gray-400 line-clamp-2'}
+            dangerouslySetInnerHTML={{
+              __html: anime.description.replace(/<\w*\\?>/g, ''),
+            }}
+          />
 
           <div className="m-4 flex justify-end space-x-2 text-xs text-white">
             <Icon

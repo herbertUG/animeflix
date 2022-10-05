@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 
 import { setEpisode } from '@slices/episode';
 import { useDispatch, useSelector } from '@store/store';
@@ -27,8 +27,6 @@ const Episode: React.FC = () => {
 
   const [currentPage, setPage] = useState(1);
 
-  const inputRef = useRef<HTMLInputElement>(null);
-
   // Show 100 episodes per page.
   // for 123 episodes there should be 2 pages
   const pages = Math.ceil(episodes / 100);
@@ -38,24 +36,12 @@ const Episode: React.FC = () => {
   return (
     <div>
       <div className="m-2 flex">
-        <span className="text-gray-300 md:text-lg">Go to episode: </span>
-        <input
-          ref={inputRef}
-          className="ml-2 w-32 rounded-sm p-1 text-sm text-gray-800 placeholder-gray-700 outline-none md:text-base"
-          placeholder="Episode no."
-          onKeyDown={(e) => {
-            if (e.key !== 'Enter') return;
-
-            dispatch(setEpisode(parseInt(inputRef.current.value, 10)));
-            inputRef.current.value = '';
-          }}
-        ></input>
+        <span className="text-gray-300 md:text-lg">Episodes</span>
       </div>
 
       {episodes && (
         <div className="m-2">
           <div className="flex space-x-2">
-            <span className="text-lg text-gray-300">Episodes: </span>
             <div className="flex flex-wrap space-x-2">
               {new Array(pages).fill(1).map((_v, i) => (
                 <PageButton
@@ -73,7 +59,7 @@ const Episode: React.FC = () => {
               .slice((currentPage - 1) * 100, currentPage * 100)
               .map((v) => (
                 <div
-                  className="rounded-sm bg-gray-100 py-[1px] px-1 text-gray-800 hover:bg-gray-400"
+                  className="cursor-pointer font-medium text-[#C3073F] hover:text-white hover:underline"
                   key={v}
                   onClick={() => dispatch(setEpisode(v))}
                 >

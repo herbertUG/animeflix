@@ -43,7 +43,7 @@ const Genre = ({
 
   return (
     <>
-      <NextSeo title={`Animes for Genre ${genre} | Animeflix`} />
+      <NextSeo title={`Animes for Genre ${genre} | Labanime`} />
 
       <Header />
 

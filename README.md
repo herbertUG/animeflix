@@ -4,7 +4,7 @@
     <a href="https://github.com/chirag-droid/animeflix">
       <img src="https://aniflix.pro/favicon.ico" alt="Logo">
     </a>
-    <h3>Animeflix - Watch animes online</h3>
+    <h3>Labanime - Watch animes online</h3>
     <!-- REPOSITORY INFO BADGES -->
     <a href="https://discord.gg/4UPU8etvae">
       <img src="https://img.shields.io/discord/971304939525644298?label=discord&logo=discord&color=5460e6&style=flat-square&labelColor=2b2f35">

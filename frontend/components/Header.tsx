@@ -16,12 +16,14 @@ const Header: React.FC<{}> = () => {
   };
 
   return (
-    <header className="sticky top-0 z-[51] flex h-12 w-full items-center bg-gray-900 shadow-md">
+    <header className="sticky top-0 z-[51] flex h-12 w-full items-center bg-gray-900">
       <Link href="/" passHref>
         <a>
           <AnimeflixIcon className="ml-4 h-7 w-7 cursor-pointer sm:ml-6" />
         </a>
       </Link>
+
+      {/* block w-full rounded-md border-gray-300 pl-7 pr-12 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm */}
 
       <div className="ml-4 flex items-center rounded bg-gray-50 py-[1px] px-2 sm:ml-6">
         <SearchIcon className="h-4 w-4" />

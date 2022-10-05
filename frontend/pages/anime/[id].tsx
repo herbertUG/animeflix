@@ -74,7 +74,7 @@ const Anime = ({
   return (
     <>
       <NextSeo
-        title={`${anime.title.romaji || anime.title.english} | Animeflix`}
+        title={`${anime.title.romaji || anime.title.english} | Labanime`}
         description={anime.description}
         openGraph={{
           images: [

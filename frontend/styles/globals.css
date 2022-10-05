@@ -13,6 +13,8 @@
     }
 
     body {
-        @apply font-sans bg-black
+        @apply bg-gray-900;
+        font-family: 'Arial',open sans,sans-serif;
+        font-size: 15px;
     }
 }

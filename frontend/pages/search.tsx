@@ -40,7 +40,7 @@ const Search = ({
 
   return (
     <>
-      <NextSeo title={`Results for ${keyword} | Animeflix`} />
+      <NextSeo title={`Results for ${keyword} | Labanime`} />
 
       <Header />
 

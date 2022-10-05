@@ -20,12 +20,13 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <DefaultSeo
-        title="Animeflix - Watch animes without ads"
-        description="Watch anime shows, tv, movies for free without ads on your mobile, tablet, or pc"
+        title="Labanime - Watch anime free"
+        description="Watch anime shows, tv, movies for free on your mobile, tablet, or pc"
         additionalMetaTags={[
           {
             name: 'keywords',
-            content: 'watch animes, animes online, anime adsfree, adfree anime',
+            content:
+              'watch animes, animes online, anime, animes, top anime, fast anime,',
           },
           {
             name: 'theme-color',
@@ -44,7 +45,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           cardType: 'summary_large_image',
         }}
         openGraph={{
-          site_name: 'Animeflix',
+          site_name: 'Labanime',
           images: [
             {
               url: '/preview.png',

@@ -220,9 +220,13 @@ const Watch = ({
           <Episode />
 
           {/* Anime decription */}
-          <p className="m-2 text-gray-400 line-clamp-6 md:line-clamp-none">
-            {anime.description.replace(/<\w*\\?>/g, '')}
-          </p>
+
+          <p
+            className={'m-2 text-gray-400 line-clamp-6 md:line-clamp-none'}
+            dangerouslySetInnerHTML={{
+              __html: anime.description.replace(/<\w*\\?>/g, ''),
+            }}
+          />
         </div>
 
         {/* Anime recommendations */}
